@@ -80,3 +80,7 @@ Rift Arena has five articulated enemy designs, charge telegraphs and orbiting sp
 
 ## Login
 The decorative welcome uses a maths prompt (7 + 5; answer 12). It is a playful entry interaction, not access control.
+
+
+## Desktop sticky notes
+The contact/services note and theme-specific education note use paper colours, folded corners and CSS push pins. Night mode lists the MSc Artificial Intelligence at Queen Mary (2026–27), BSc Computer Science at City (2023–26), and two IBM credentials, sourced from the public LinkedIn profile. Day mode lists MSc Financial Engineering at WorldQuant University, supplied directly by Princewill, alongside fintech project services. No completion status or graduation date is asserted for the finance degree. Theme changes, device Auto and cross-tab preferences update the education note immediately.

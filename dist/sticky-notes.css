@@ -1,0 +1,32 @@
+/* Paper, folded corners and push pins — readable in both desktop appearances. */
+.workspace .paper-note,.dark .workspace .paper-note{
+ color:#382f23;background:linear-gradient(180deg,#ffe668 0 32px,#fff09a 32px,#ffed8b 90%,#f4dc72);
+ border:0;border-radius:1px 1px 15px 2px;backdrop-filter:none;
+ box-shadow:2px 10px 16px #17233738,inset 0 1px #fff8,inset 0 -1px #ad914b45;
+ isolation:isolate;overflow:visible;
+}
+.workspace .paper-note:after{content:'';position:absolute;right:0;bottom:0;width:24px;height:24px;border-radius:0 0 13px 0;background:linear-gradient(135deg,#c8a75700 47%,#b2985140 50%,#fff7c2 56%,#f6df80);pointer-events:none}
+.workspace .paper-note .note-pin{position:absolute;top:-16px;left:52%;width:19px;height:19px;border-radius:50%;background:radial-gradient(circle at 30% 24%,#b3e8ff,#398bb7 44%,#165378 75%);box-shadow:2px 6px 4px #41350c45;transform:rotate(18deg);z-index:2}
+.workspace .paper-note .note-pin:before{content:'';position:absolute;top:15px;left:8px;width:3px;height:13px;background:linear-gradient(90deg,#79828a,#f3f5f5,#697985);transform:rotate(-18deg);transform-origin:top;z-index:-1}
+.workspace .paper-note .note-pin:after{content:'';position:absolute;inset:3px 4px 9px 3px;border-radius:50%;background:#d9f4ff85}
+.workspace .paper-note>small{color:#69562b;font-size:8px;letter-spacing:1.3px;font-weight:700}
+.workspace .paper-note h2{font-family:'Caveat','Comic Sans MS',cursive;font-size:34px;font-weight:700;line-height:1.05;letter-spacing:0;margin:13px 0 12px;color:#322c25}
+.workspace .paper-note h3{font-size:11px;margin:14px 0 7px;font-weight:700;color:inherit}
+.workspace .paper-note button,.workspace .paper-note a{color:#403b2e}
+.workspace .services-note-actions button:first-child,.dark .workspace .services-note-actions button:first-child{background:#ffffff70;border:1px solid #967c3540;border-radius:4px;color:#38301f;box-shadow:0 1px 2px #6e4f1512;font-weight:650}
+.workspace .services-note-actions button:first-child:hover{background:#fff9}
+.workspace .credentials-note{left:8%;right:auto;bottom:10%;width:300px;padding:23px 23px 22px;transform:rotate(-2deg)}
+.workspace .credentials-note[data-subject=computing]{background:linear-gradient(180deg,#8dcddd 0 32px,#c7edf1 32px,#bce5ec 90%,#9fd1dc);color:#233e48}
+.workspace .credentials-note[data-subject=computing]>small{color:#315c69}
+.workspace .credentials-note[data-subject=computing] h2{color:#233e48}
+.note-education{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.note-education li{display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1.4}
+.note-education span{font-size:10px;line-height:1.5;opacity:.86}
+.workspace .paper-note .note-certification{font:10px/1.55 'DM Sans',sans-serif;color:inherit;margin:12px 0 0}
+.note-projects{padding-left:15px;margin:0;font-size:11px;line-height:1.8}
+.paper-note-links{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:16px}
+.workspace .paper-note-links button{font:650 11px 'DM Sans',sans-serif;padding:0;text-align:left}
+.paper-note-links a{font-size:9px;text-decoration:underline;text-underline-offset:3px;opacity:.85}
+.workspace .credentials-note[data-subject=computing] button,.workspace .credentials-note[data-subject=computing] a{color:#234653}
+@media(min-width:701px) and (max-width:1100px){.workspace .credentials-note{left:4%;width:260px}.workspace .services-note{right:4%;width:260px}.workspace .paper-note{padding:20px}.workspace .paper-note h2{font-size:30px}.note-education li{font-size:11px}}
+@media(max-width:700px){.workspace .credentials-note{position:relative;left:auto;right:auto;bottom:auto;grid-column:1/-1;grid-row:6;width:100%;max-width:400px;margin:20px auto 0;padding:24px;transform:rotate(-1deg)}.workspace .paper-note{color:#382f23}.note-education li{font-size:13px}.note-education span,.note-projects{font-size:12px}.paper-note-links a{font-size:11px}}
