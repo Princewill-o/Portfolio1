@@ -84,3 +84,7 @@ The decorative welcome uses a maths prompt (7 + 5; answer 12). It is a playful e
 
 ## Desktop sticky notes
 The contact/services note and theme-specific education note use paper colours, folded corners and CSS push pins. Night mode lists the MSc Artificial Intelligence at Queen Mary (2026–27), BSc Computer Science at City (2023–26), and two IBM credentials, sourced from the public LinkedIn profile. Day mode lists MSc Financial Engineering at WorldQuant University, supplied directly by Princewill, alongside fintech project services. No completion status or graduation date is asserted for the finance degree. Theme changes, device Auto and cross-tab preferences update the education note immediately.
+
+
+## Notes app and direct day/night switch
+Both paper notes now have draggable title bars, close/minimise/expand controls, a delete action and a resize grip. Minimise places a restore tile in the dock. The Notes dock app lists open, closed, minimised and deleted notes, restores individual notes and resets all notes and their layout. Geometry and visibility persist in localStorage; deleting a note is reversible and never removes project content. Keyboard: Alt + arrows on the title bar moves; arrows on the resize grip stretch; Ctrl/Cmd + M/W on the title bar minimises/closes. The sky switch changes Day/Night in one click, has a checked switch state, and updates wallpapers and credentials. Right-click it, Shift+F10, or use Apple → Appearance to choose Auto.
