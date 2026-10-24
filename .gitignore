@@ -10,3 +10,6 @@ data/
 *.sqlite-*
 .env.*
 !.env.example
+
+.vercel/
+.vercel

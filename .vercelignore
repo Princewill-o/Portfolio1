@@ -1,0 +1,11 @@
+.git
+.openai
+.env
+.env.*
+data
+node_modules
+*.log
+**/*.blend1
+server
+preview.mjs
+tests

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "dist",
+  "buildCommand": "node scripts/verify-deploy.mjs",
+  "installCommand": "",
+  "cleanUrls": false,
+  "headers": [
+    {
+      "source": "/api/chat/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}

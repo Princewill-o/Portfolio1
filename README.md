@@ -88,3 +88,7 @@ The contact/services note and theme-specific education note use paper colours, f
 
 ## Notes app and direct day/night switch
 Both paper notes now have draggable title bars, close/minimise/expand controls, a delete action and a resize grip. Minimise places a restore tile in the dock. The Notes dock app lists open, closed, minimised and deleted notes, restores individual notes and resets all notes and their layout. Geometry and visibility persist in localStorage; deleting a note is reversible and never removes project content. Keyboard: Alt + arrows on the title bar moves; arrows on the resize grip stretch; Ctrl/Cmd + M/W on the title bar minimises/closes. The sky switch changes Day/Night in one click, has a checked switch state, and updates wallpapers and credentials. Right-click it, Shift+F10, or use Apple → Appearance to choose Auto.
+
+
+## Vercel hosting
+Deploy the repository root with the supplied vercel.json. Static output is dist/; scripts/verify-deploy.mjs checks key entry points. Node 24 runs the small API availability adapter. Private .env files, local SQLite chat data and logs are excluded from uploads. The local preview.mjs backend still supports full email chat once configured. Vercel chat remains explicitly unavailable until an email service and durable database are integrated; no submitted message is accepted or stored by the adapter. Visitors can contact Princewill via the email and LinkedIn links in Messages.
