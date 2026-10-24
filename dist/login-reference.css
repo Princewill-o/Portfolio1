@@ -43,3 +43,5 @@
 
 #login #login-error{color:#ffe0e8;font-size:11px;min-height:1.5em;margin:9px 0 0}
 #login .password-box input[aria-invalid="true"]{border-color:#ffbccf;box-shadow:0 0 0 1px #ffbccf55}
+
+#login .public-profile-link{color:#eeeaff;font-size:11px;margin:-13px 0 23px;text-underline-offset:4px;padding:6px 10px}.no-script-profile{position:fixed;z-index:10000;inset:auto 0 0;background:#f5f4ed;color:#253b3d;padding:14px;text-align:center}
