@@ -1,0 +1,30 @@
+/* MacTahoe icon-theme integration. SVG assets keep their original transparency. */
+.tahoe-theme .dock{padding:10px 13px 12px!important;gap:12px;border-radius:25px!important;background:linear-gradient(145deg,#edf5fc82,#d6e1eb65)!important;backdrop-filter:blur(40px) saturate(1.7)}
+.tahoe-theme .dock-icon>.macos-app-image{width:112%;height:112%;object-fit:contain;clip-path:none!important;transform:none!important;filter:none!important;border:0;box-shadow:none;border-radius:0}
+.tahoe-theme .dock-icon{background:transparent!important;box-shadow:none!important;border:0!important}
+.tahoe-theme .psn-dock-art{background:none!important;box-shadow:none!important;border:0!important;overflow:visible}
+.tahoe-theme .psn-dock-art>img{width:112%!important;height:112%!important;object-fit:contain;filter:none!important}
+.tahoe-theme .psn-dock-art>b{position:absolute;right:-2px;bottom:0;font:600 7px 'DM Sans',sans-serif;padding:2px 4px;border-radius:4px;background:#2459a8;color:white;letter-spacing:.4px}
+.tahoe-theme .macos-folder{filter:none!important}
+.tahoe-theme .macos-folder>img{object-fit:contain;filter:none!important}
+.tahoe-theme .macos-folder>b,.tahoe-theme .folder-sticker{display:none}
+.tahoe-theme .macos-folder .macos-folder-front{clip-path:inset(33% 0 0);transform-origin:50% 90%}
+.tahoe-theme .tahoe-sidebar-icon{width:23px;height:23px;object-fit:contain;flex-shrink:0}
+.tahoe-theme .finder-sidebar button{display:flex;align-items:center;gap:9px}
+.tahoe-theme .finder,.tahoe-theme .portfolio-safari{border-radius:16px!important;box-shadow:0 28px 80px #0c223a40,0 0 0 1px #ffffff70!important}
+.tahoe-theme .window-bar,.tahoe-theme .safari-toolbar{background:#eff3f7b8;backdrop-filter:blur(32px) saturate(1.6)}
+[data-theme=dark].tahoe-theme .dock{background:linear-gradient(145deg,#384553aa,#172333aa)!important;border-color:#ffffff30!important}
+[data-theme=dark].tahoe-theme .window-bar,[data-theme=dark].tahoe-theme .safari-toolbar{background:#243141c9}
+.tahoe-theme .safari-native-icon{object-fit:contain;filter:none!important;border:0!important;box-shadow:none!important}
+#tahoe-welcome{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;background:#edf3f6e8;backdrop-filter:blur(30px);color:#34475b;font:12px 'DM Sans',sans-serif;animation:tahoe-boot-in .18s ease-out}
+#tahoe-welcome[hidden]{display:none}
+.tahoe-boot-mark{width:64px;height:72px;object-fit:contain;margin-bottom:25px}
+.tahoe-spinner{width:22px;height:22px;animation:tahoe-spin .85s steps(12) infinite}
+[data-theme=dark] #tahoe-welcome{background:#101820ec;color:#e8eff7}
+[data-theme=dark] .tahoe-boot-mark,[data-theme=dark] .tahoe-spinner{filter:invert(1)}
+.tahoe-theme #opening-load-status:before,.tahoe-theme .console-loading>p:before{content:'';display:inline-block;width:18px;height:18px;margin-right:12px;vertical-align:middle;background:url('assets/tahoe/spinner.svg') center/contain no-repeat;filter:invert(1);animation:tahoe-spin .85s steps(12) infinite}
+@keyframes tahoe-spin{to{transform:rotate(360deg)}}
+@keyframes tahoe-boot-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.tahoe-theme *,.tahoe-theme *:before{animation-duration:.001ms!important;animation-iteration-count:1!important}.tahoe-spinner{animation:none}}
+
+.tahoe-theme .opening-brand-mark>img{width:115px;height:115px;object-fit:contain;display:block}.tahoe-theme .opening-brand-mark{display:flex;justify-content:center;align-items:center}

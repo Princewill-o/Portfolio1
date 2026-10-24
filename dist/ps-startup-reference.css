@@ -1,0 +1,61 @@
+/* Timed from all 108 supplied reference frames. Profile selection is replaced
+   by the portfolio's single Press E entry, as requested. */
+.project-startup{background:#11121b}
+.opening-worlds{background:#11121b}
+.opening-worlds>img,.opening-shade{display:none!important}
+.opening-reference-light{position:absolute;inset:0;z-index:-3;pointer-events:none;background:#15151f url('assets/ps-app/warm-ambient.jpg') center/cover no-repeat}
+.opening-blue-orb{inset:-10%;z-index:-2;background:#001322 url('assets/ps-app/blue-bloom.jpg') center/cover no-repeat;filter:blur(10px);opacity:0;animation:none;transform:none}
+.project-startup[data-phase=brand]{background:#000}
+.project-startup[data-phase=brand] .opening-reference-light,.project-startup[data-phase=brand] #opening-stars{opacity:0}
+.opening-brand{background:#000;animation:none;padding:0}
+.opening-brand-mark{font-size:0;padding:0;letter-spacing:0;filter:none;animation:reference-logo-hold 6.6s linear both}
+.opening-brand-mark>img{display:block!important;width:clamp(170px,18.75vw,280px)!important;height:auto!important;mix-blend-mode:screen}
+.opening-brand>p,.brand-project-flashes{display:none}
+.project-startup[data-phase=brand] .opening-header,.project-startup[data-phase=atmosphere] .opening-header{opacity:0;pointer-events:none}
+.project-startup[data-phase=brand] .opening-footer>span,.project-startup[data-phase=atmosphere] .opening-footer>span{opacity:0}
+.project-startup[data-phase=atmosphere] .opening-blue-orb{animation:reference-blue-bloom 6.9s linear both}
+.project-startup[data-phase=atmosphere] .opening-reference-light{animation:reference-warm-light 6.9s linear both}
+.opening-atmosphere{animation:none;align-items:flex-start;justify-content:center;padding:0 16%;pointer-events:none}
+.opening-atmosphere>p{font-size:clamp(10px,1.1vw,17px);font-weight:700;line-height:1.7;max-width:650px;color:#dbe4e8aa;letter-spacing:1.5px;animation:reference-caption 6.9s linear both}
+.opening-header>a{display:block;width:35px;height:35px;letter-spacing:0}
+.opening-header>a>img{width:100%;height:100%;object-fit:contain;mix-blend-mode:screen}
+.opening-ready{gap:27px;padding:0 20px;text-align:center;animation:reference-interface-in .8s ease both}
+.opening-ready>.opening-eyebrow,.opening-ready-copy,.opening-preview-strip,.opening-keyboard{display:none!important}
+.opening-ready h1{position:absolute;top:16%;left:20px;right:20px;font:300 clamp(16px,1.7vw,25px)/1.4 'DM Sans',sans-serif;letter-spacing:0;margin:0;color:#f0edf2d9}
+.opening-ready-logo{width:112px;height:112px;border:2px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 45px #fff1}
+.opening-ready-logo img{width:100%;height:100%;mix-blend-mode:screen;border-radius:50%}
+#opening-start{background:none;border:0;border-radius:0;padding:0;gap:13px;box-shadow:none;color:#eee;backdrop-filter:none;animation:none}
+#opening-start>kbd{border-radius:7px;width:34px;height:34px;font-size:17px;box-shadow:none;animation:none;border-color:#ffffff80}
+#opening-start>span{font-size:14px;font-weight:300}
+#opening-start>span small{font-size:9px;color:#ffffff55}
+#opening-start>b{display:none}
+.opening-load{background:transparent;backdrop-filter:none;animation:reference-interface-in .45s .2s both}
+.opening-launch-cover{display:none}
+.opening-load>.opening-eyebrow{margin-bottom:20px}
+.opening-load #opening-launch-title{max-width:900px;line-height:1.12;font-size:clamp(25px,4vw,54px)!important;font-weight:800!important}
+.opening-real-progress{margin-top:16px}
+.opening-load-cards{margin-top:40px}
+.opening-load-cards>span{transition:opacity .35s}
+.project-startup.launching{transition:opacity .6s ease;opacity:0;transform:none!important;filter:none!important}
+.opening-footer{color:#ffffff6b}
+.opening-footer>span:nth-child(2){display:none}
+@keyframes reference-logo-hold{0%,91%{opacity:1;transform:none}98%,100%{opacity:0;transform:none}}
+@keyframes reference-blue-bloom{0%{opacity:0;transform:scale(.75) translate(-5%,5%);filter:blur(17px)}10%{opacity:.65}48%{opacity:1;filter:blur(8px)}62%{opacity:1;transform:scale(1.18) translate(2%,0);filter:blur(25px)}76%,100%{opacity:0;transform:scale(1.4) translate(8%,-3%);filter:blur(45px)}}
+@keyframes reference-warm-light{0%,63%{opacity:0}79%{opacity:.7}100%{opacity:1}}
+@keyframes reference-caption{0%{opacity:0}8%,40%{opacity:1}48%,100%{opacity:0}}
+@keyframes reference-interface-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+/* Reference frames 82–92: row, header, backdrop, title, actions, then side card. */
+.reference-library-arrival .console-game-row{transform-origin:12% 50%;animation:reference-row-arrive .65s cubic-bezier(.18,.8,.2,1) both}
+.reference-library-arrival .console-header{animation:reference-interface-in .4s .35s both}
+.reference-library-arrival .console-backdrops{animation:reference-background-in .8s .55s both}
+.reference-library-arrival .console-game-info{animation:reference-interface-in .5s .9s both}
+.reference-library-arrival .console-game-actions{animation:reference-interface-in .4s 1.05s both}
+.reference-library-arrival .console-cover-card,.reference-library-arrival .console-project-index{animation:reference-interface-in .5s 1.45s both}
+.reference-library-arrival .hub-stories,.reference-library-arrival .console-footer{animation:reference-interface-in .5s 1.7s both}
+@keyframes reference-row-arrive{from{opacity:0;transform:translateX(-24px) scale(.65)}to{opacity:1;transform:none}}
+@keyframes reference-background-in{from{opacity:0}to{opacity:1}}
+@media(max-width:700px){.opening-ready-logo{width:90px;height:90px}.opening-ready h1{top:19%;font-size:17px}.opening-atmosphere{padding:0 12%}.opening-atmosphere>p{font-size:10px;letter-spacing:.6px}.opening-header{padding-top:20px}.opening-header>span{display:none}}
+@media(prefers-reduced-motion:reduce){.project-startup *,.reference-library-arrival *{animation:none!important;transition:none!important}.opening-blue-orb{display:none}.opening-reference-light{opacity:1!important}}
+.opening-reduced-motion *{animation:none!important;transition:none!important}
+
+.reference-library-arrival .console-library-top{animation:reference-interface-in .4s .35s both}.reference-library-arrival .console-hub{background:#171720 url("assets/ps-app/warm-ambient.jpg") center/cover no-repeat}

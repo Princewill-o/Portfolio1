@@ -1,0 +1,1 @@
+import './fighter-game.js';

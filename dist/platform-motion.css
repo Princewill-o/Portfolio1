@@ -1,0 +1,50 @@
+/* Motion direction informed by Motion.dev and native View Transition patterns. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:platform-route-out .25s cubic-bezier(.4,0,1,1) both}
+::view-transition-new(root){animation:platform-route-in .6s cubic-bezier(.2,.8,.2,1) both}
+.game-backdrop{translate:var(--ambient-x,0px) var(--ambient-y,0px);width:calc(100% + 30px);height:calc(100% + 20px);left:-15px;top:-10px;will-change:opacity,transform;transition:opacity 850ms ease,transform 12s linear}
+.startup-environment>img{translate:var(--ambient-x,0px) var(--ambient-y,0px);width:calc(100% + 30px);height:calc(100% + 20px);position:relative;left:-15px;top:-10px}
+.console-game-tile{transition:width .62s cubic-bezier(.18,1.04,.28,1)}
+.console-game-row{perspective:1200px}
+.tile-art,.social-card,.project-card,.booking-choice,.community-home-tile,.console-explore-tile,.console-library-end,#community-library-grid>button>span,.hub-stories>button{transform-style:preserve-3d;transition:rotate .45s cubic-bezier(.2,.8,.2,1),transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,outline-offset .4s,border-color .4s}
+[data-pointer-depth]{transform:perspective(1000px) rotateX(var(--tilt-rx,0deg)) rotateY(var(--tilt-ry,0deg))!important}
+.tile-art:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--pointer-x,50%) var(--pointer-y,40%),#ffffff23,transparent 62%);opacity:0;transition:opacity .35s;pointer-events:none;z-index:4}
+.tile-art[data-pointer-depth]:after{opacity:1}
+.console-game-tile.selected .tile-art{box-shadow:0 0 0 2px #ffffff0c,0 10px 35px #0003;outline-color:#e3cfec;transition:box-shadow .45s,outline-color .45s,transform .45s}
+.console-game-tile.selected .tile-caption{animation:tile-caption-in .45s ease both}
+.console-game-info{will-change:opacity}
+.console-main-nav>button{position:relative;transition:color .25s}
+.console-main-nav>button:after{content:'';height:1px;position:absolute;bottom:-9px;left:0;right:0;background:#ffffff70;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.console-main-nav>button:hover:after{transform:scaleX(.6)}
+.console-header-right button{transition:scale .35s cubic-bezier(.18,1.4,.3,1),filter .3s}
+.console-header-right button:hover{scale:1.12;filter:drop-shadow(0 0 9px #fff3)}
+.game-primary,.game-details,.console-start,.adventure-primary,.window-content .btn,#discover-collection{transition:scale .4s cubic-bezier(.2,1.5,.3,1),background .3s,box-shadow .35s}
+.game-primary:hover,.game-details:hover{scale:1.035;box-shadow:0 5px 24px #0002}
+.game-primary:active,.game-details:active,.console-start:active,.window-content .btn:active{scale:.96}
+.community-profile{animation:profile-surface-in .35s cubic-bezier(.2,.8,.2,1) both;transform-origin:95% 0}
+.community-profile>button{transition:background .25s,padding .3s cubic-bezier(.2,.8,.2,1)}
+.community-profile>button:hover{padding-left:17px}
+#app-search[open],#app-settings[open]{animation:motion-dialog-in .4s cubic-bezier(.2,.8,.2,1) both}
+#game-project-detail[open]::backdrop,#app-search[open]::backdrop,#app-settings[open]::backdrop{animation:motion-backdrop-in .35s both}
+.console-progress>span{position:relative;background:linear-gradient(90deg,#8ba8c8,#fff);transition:width .1s linear;box-shadow:0 0 17px #b8d6ff70}
+.console-progress>span:after{content:'';position:absolute;right:0;top:-2px;width:4px;height:5px;border-radius:50%;background:#f3f8ff;filter:blur(1px);box-shadow:0 0 12px 4px #e0eaff50}
+.console-start kbd{position:relative;overflow:hidden}
+.console-start kbd:after{content:'';position:absolute;inset:-50%;background:linear-gradient(115deg,transparent 35%,#fff2 50%,transparent 65%);translate:-120% 0;animation:key-shimmer 5.5s ease-in-out infinite;pointer-events:none}
+.desktop-ready .desktop-socials>a{animation:social-enter .65s cubic-bezier(.2,.8,.2,1) both;animation-delay:.4s}
+.desktop-ready .desktop-socials>a:nth-child(2){animation-delay:.46s}.desktop-ready .desktop-socials>a:nth-child(3){animation-delay:.52s}.desktop-ready .desktop-socials>a:nth-child(4){animation-delay:.58s}.desktop-ready .desktop-socials>a:nth-child(5){animation-delay:.64s}
+.project-peek .peek-toolbar i{transition:scale .3s}.project-peek:hover .peek-toolbar i{scale:1.2}.project-peek:hover .peek-toolbar i:nth-child(1){background:#f4b0a9}.project-peek:hover .peek-toolbar i:nth-child(2){background:#ead591}.project-peek:hover .peek-toolbar i:nth-child(3){background:#a9cba0}
+.dock-icon>.macos-app-image{transition:filter .35s}.dock-icon:hover>.macos-app-image{filter:drop-shadow(0 9px 7px #20466d4a)}
+.folder-wrap .macos-folder-front{transition:transform .65s cubic-bezier(.18,1.35,.3,1)}
+.folder-wrap .folder-paper{transition:transform .65s cubic-bezier(.18,1.2,.3,1)}
+.folder-wrap .folder-paper:nth-child(2){transition-delay:30ms}.folder-wrap .folder-paper:nth-child(3){transition-delay:60ms}
+@keyframes platform-route-out{to{opacity:0;filter:blur(4px);transform:scale(.98)}}
+@keyframes platform-route-in{from{opacity:0;filter:blur(6px);transform:scale(1.025)}to{opacity:1;filter:blur(0);transform:scale(1)}}
+@keyframes tile-caption-in{from{opacity:0;translate:0 -5px}to{opacity:1;translate:0 0}}
+@keyframes profile-surface-in{from{opacity:0;transform:translateY(-8px) scale(.96);filter:blur(4px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes motion-dialog-in{from{opacity:0;translate:0 12px;scale:.96;filter:blur(5px)}to{opacity:1;translate:0 0;scale:1;filter:blur(0)}}
+@keyframes motion-backdrop-in{from{opacity:0}to{opacity:1}}
+@keyframes key-shimmer{0%,65%{translate:-120% 0}85%,100%{translate:120% 0}}
+@keyframes social-enter{from{opacity:0;translate:0 9px;scale:.8}to{opacity:1;translate:0 0;scale:1}}
+@media(hover:none){[data-pointer-depth]{transform:none!important}.game-backdrop,.startup-environment>img{translate:0 0!important}.console-game-tile.selected .tile-art{box-shadow:0 0 0 2px #ffffff0c}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}::view-transition-old(root),::view-transition-new(root){animation:none!important}*,*:before,*:after{animation:none!important;transition:none!important}.game-backdrop,.startup-environment>img{translate:0 0!important}[data-pointer-depth]{transform:none!important}}
+.reduce-motion *, .reduce-motion *:before,.reduce-motion *:after{animation:none!important;transition:none!important}.reduce-motion .game-backdrop,.reduce-motion .startup-environment>img{translate:0 0!important}.reduce-motion [data-pointer-depth]{transform:none!important}

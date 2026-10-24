@@ -1,0 +1,35 @@
+{
+  "asset": "fan-models/mario",
+  "revision": 2,
+  "tool": "Blender 4.5.15 LTS",
+  "vertices": 4098,
+  "triangles": 8052,
+  "triangleBudget": 18000,
+  "materials": 2,
+  "closedManifold": true,
+  "nonManifoldEdges": 0,
+  "ngons": 0,
+  "zeroAreaFaces": 0,
+  "uvAtlas": "UV_Atlas",
+  "uvOutsideTile": 0,
+  "markedSeamEdges": 1798,
+  "dimensionsMeters": {
+    "width": 1.08,
+    "depth": 0.67,
+    "height": 1.53
+  },
+  "origin": "bottom-centre, world origin",
+  "blenderAxes": "Z-up, -Y forward",
+  "glTFExport": "Y-up; character-front +Z after Blender -Y conversion",
+  "textureResolution": 512,
+  "textureChannels": [
+    "sRGB basecolor",
+    "tangent normal",
+    "packed occlusion/roughness/metallic"
+  ],
+  "source": "blender/scene.blend",
+  "model": "models/hero.glb",
+  "character": "mario",
+  "fanModel": true,
+  "lodTriangles": 4186
+}

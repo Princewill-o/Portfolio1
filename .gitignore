@@ -1,3 +1,12 @@
 node_modules/
 .DS_Store
 *.log
+
+.env
+data/
+
+*.blend1
+*.sqlite
+*.sqlite-*
+.env.*
+!.env.example

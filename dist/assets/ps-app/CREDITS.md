@@ -1,0 +1,1 @@
+PS App icon and white PlayStation mark: user-supplied reference images. The SVG is a non-destructive viewport crop of the supplied icon screenshot. Blue bloom and warm ambient stills: frames 41 and 81 from the user-supplied PS5_Startup_Screen_frames.zip. Motion and interactive UI are implemented in the portfolio; these images do not represent original portfolio branding.

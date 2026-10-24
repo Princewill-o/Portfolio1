@@ -1,0 +1,38 @@
+{
+  "asset": "mario",
+  "revision": 2,
+  "tool": "Blender 4.5.15 LTS",
+  "vertices": 5462,
+  "triangles": 10732,
+  "triangleBudget": 18000,
+  "materials": 2,
+  "closedManifold": true,
+  "nonManifoldEdges": 0,
+  "ngons": 0,
+  "zeroAreaFaces": 0,
+  "uvAtlas": "UV_Atlas",
+  "uvOutsideTile": 0,
+  "markedSeamEdges": 2590,
+  "dimensionsMeters": {
+    "width": 1.08,
+    "depth": 0.67,
+    "height": 1.53
+  },
+  "origin": "bottom-centre, world origin",
+  "blenderAxes": "Z-up, -Y forward",
+  "glTFExport": "Y-up; character-front +Z after Blender -Y conversion",
+  "textureResolution": 512,
+  "textureChannels": [
+    "sRGB basecolor",
+    "tangent normal",
+    "packed occlusion/roughness/metallic"
+  ],
+  "source": "blender/scene.blend",
+  "model": "models/hero.glb",
+  "character": "mario",
+  "fanModel": true,
+  "positiveAreaUvOverlaps": 0,
+  "uvIntersectionPairsTested": 199848,
+  "blenderTexturesPacked": true,
+  "lodTriangles": 5580
+}

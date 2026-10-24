@@ -1,0 +1,35 @@
+{
+  "asset": "voxel-trails",
+  "revision": 2,
+  "tool": "Blender 4.5.15 LTS",
+  "vertices": 760,
+  "triangles": 1360,
+  "triangleBudget": 18000,
+  "materials": 2,
+  "closedManifold": true,
+  "nonManifoldEdges": 0,
+  "ngons": 0,
+  "zeroAreaFaces": 0,
+  "uvAtlas": "UV_Atlas",
+  "uvOutsideTile": 0,
+  "markedSeamEdges": 716,
+  "dimensionsMeters": {
+    "width": 44.6,
+    "depth": 39.403,
+    "height": 12.8
+  },
+  "origin": "existing gameplay stage origin",
+  "blenderAxes": "Z-up, -Y forward",
+  "glTFExport": "Y-up; character-front +Z after Blender -Y conversion",
+  "textureResolution": 512,
+  "textureChannels": [
+    "sRGB basecolor",
+    "tangent normal",
+    "packed occlusion/roughness/metallic"
+  ],
+  "source": "blender/scene.blend",
+  "model": "models/hero.glb",
+  "positiveAreaUvOverlaps": 0,
+  "uvIntersectionPairsTested": 6822,
+  "blenderTexturesPacked": true
+}

@@ -1,0 +1,38 @@
+{
+  "asset": "nova-duel",
+  "revision": 2,
+  "tool": "Blender 4.5.15 LTS",
+  "vertices": 2533,
+  "triangles": 4850,
+  "triangleBudget": 18000,
+  "materials": 2,
+  "closedManifold": true,
+  "nonManifoldEdges": 0,
+  "ngons": 0,
+  "zeroAreaFaces": 0,
+  "uvAtlas": "UV_Atlas",
+  "uvOutsideTile": 0,
+  "markedSeamEdges": 1774,
+  "dimensionsMeters": {
+    "width": 1.35,
+    "depth": 0.517,
+    "height": 2.201
+  },
+  "origin": "bottom-centre, world origin",
+  "blenderAxes": "Z-up, -Y forward",
+  "glTFExport": "Y-up; character-front +Z after Blender -Y conversion",
+  "textureResolution": 512,
+  "textureChannels": [
+    "sRGB basecolor",
+    "tangent normal",
+    "packed occlusion/roughness/metallic"
+  ],
+  "source": "blender/scene.blend",
+  "model": "models/hero.glb",
+  "character": "goku",
+  "fanModel": true,
+  "lodTriangles": 2521,
+  "positiveAreaUvOverlaps": 0,
+  "uvIntersectionPairsTested": 56628,
+  "blenderTexturesPacked": true
+}

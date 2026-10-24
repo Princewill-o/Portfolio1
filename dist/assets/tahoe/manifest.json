@@ -1,0 +1,23 @@
+{
+  "finder": "src/apps/scalable/file-manager.svg",
+  "safari": "src/apps/scalable/safari.svg",
+  "projects": "src/places/scalable/blue-folder-code.svg",
+  "services": "src/apps/scalable/softwarecenter.svg",
+  "awards": "src/apps/scalable/calendar.svg",
+  "socials": "src/apps/scalable/addressbook.svg",
+  "mail": "src/apps/scalable/internet-mail.svg",
+  "calendar": "src/apps/scalable/calendar.svg",
+  "settings": "src/apps/scalable/preferences-system.svg",
+  "lock": "src/apps/scalable/lock-screen.svg",
+  "games": "src/apps/scalable/applications-games.svg",
+  "trash": "src/places/scalable/user-trash.svg",
+  "trash-full": "src/places/scalable/user-trash-full.svg",
+  "folder": "src/places/scalable/folder-blue.svg",
+  "folder-open": "src/places/scalable/blue-folder-open.svg",
+  "folder-green": "src/places/scalable/green-folder.svg",
+  "folder-yellow": "src/places/scalable/yellow-folder.svg",
+  "folder-orange": "src/places/scalable/orange-folder.svg",
+  "folder-purple": "src/places/scalable/purple-folder.svg",
+  "spinner": "src/status/symbolic/process-working-symbolic.svg",
+  "messages": "src/apps/scalable/empathy.svg"
+}
