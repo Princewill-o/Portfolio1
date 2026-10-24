@@ -21,6 +21,17 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "portfolio1-sigma-lac.vercel.app"
+        }
+      ],
+      "destination": "https://www.prwl.co.uk/:path*",
+      "permanent": true
     }
   ]
 }

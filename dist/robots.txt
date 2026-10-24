@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://portfolio1-sigma-lac.vercel.app/sitemap.xml
+Sitemap: https://www.prwl.co.uk/sitemap.xml

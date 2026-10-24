@@ -1,6 +1,6 @@
 import {readFileSync,existsSync} from 'node:fs';
 import assert from 'node:assert/strict';
-const base='https://portfolio1-sigma-lac.vercel.app';
+const base='https://www.prwl.co.uk';
 for(const [file,path]of [['index.html','/'],['profile.html','/profile.html'],['games.html','/games.html']]){
  const html=readFileSync('dist/'+file,'utf8');
  assert.equal((html.match(/rel="canonical"/g)||[]).length,1);assert(html.includes('href="'+base+path+'"'));

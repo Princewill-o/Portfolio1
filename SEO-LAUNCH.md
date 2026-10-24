@@ -1,8 +1,8 @@
 # Search launch checklist
 
-Production: https://portfolio1-sigma-lac.vercel.app/
-Public HTML profile: https://portfolio1-sigma-lac.vercel.app/profile.html
-Sitemap: https://portfolio1-sigma-lac.vercel.app/sitemap.xml
+Production: https://www.prwl.co.uk/
+Public HTML profile: https://www.prwl.co.uk/profile.html
+Sitemap: https://www.prwl.co.uk/sitemap.xml
 
 Implemented: descriptive name-led titles and descriptions, self-referencing canonical URLs, home duplicate redirect, Person/WebSite/WebPage and ProfilePage structured data, verified social identity links, social preview tags, public HTML profile available without login or JavaScript, and crawl discovery files. No hidden keyword text or bot-specific login bypass is used.
 
