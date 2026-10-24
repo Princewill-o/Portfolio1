@@ -42,3 +42,4 @@ MacTahoe-gtk-theme: https://github.com/vinceliuice/MacTahoe-gtk-theme
 
 ### Cursor themes
 MacTahoe-cursor-theme: https://github.com/vinceliuice/MacTahoe-icon-theme/tree/main/cursors
+Portfolio modification: messages.svg uses a green background gradient and neutral bubble shading, adapted from the supplied MacTahoe empathy icon.
