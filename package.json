@@ -1,0 +1,1 @@
+{"name":"princewill-desktop","private":true,"version":"1.0.0","scripts":{"dev":"node preview.mjs"},"type":"module"}
