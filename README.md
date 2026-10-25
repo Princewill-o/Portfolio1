@@ -92,3 +92,11 @@ Both paper notes now have draggable title bars, close/minimise/expand controls, 
 
 ## Vercel hosting
 Deploy the repository root with the supplied vercel.json. Static output is dist/; scripts/verify-deploy.mjs checks key entry points. Node 24 runs the small API availability adapter. Private .env files, local SQLite chat data and logs are excluded from uploads. The local preview.mjs backend still supports full email chat once configured. Vercel chat remains explicitly unavailable until an email service and durable database are integrated; no submitted message is accepted or stored by the adapter. Visitors can contact Princewill via the email and LinkedIn links in Messages.
+
+
+## iPhone-style mobile shell
+Phones up to 700 CSS pixels, and touch devices up to 1100 CSS pixels, use an iPhone-inspired home screen with status bar, app grid, widgets, dock and Home indicator. Larger desktop screens retain the Mac interface. Files/Finder, Safari, Messages and Notes open as full-screen touch pages with safe-area spacing; the welcome puzzle remains the entry point. Notes move to the visible mobile root and return to their original desktop parent when switching layouts. Mobile Home minimises open apps, while Notes remain recoverable. Settings offers the existing Day/Night/Auto controls.
+
+The supplied 100+ Apple iOS 27 Screens (Community) archive was inspected as a visual reference; it contains exported images, not runnable app source. The UI is implemented in mobile-shell.js/css using existing portfolio assets. No exported phone frame screenshots are used as fake functional screens.
+
+Game Studio has a compact scrollable game row and touch-sized actions. Locally implemented games use safe-area layouts, portrait/landscape menu rules, on-screen controls and interrupted-touch cleanup. Minecraft retains its upstream mobile UI and previously implemented viewport-scaling system. The externally hosted SM64 port still needs a keyboard and is labelled accordingly; the local Mario 65 has touch controls. Real iPhone/Android device visual playtests remain pending; DOM/scene/input checks are not hardware compatibility or FPS certification.
