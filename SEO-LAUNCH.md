@@ -1,12 +1,12 @@
 # Search launch checklist
 
 Production: https://www.prwl.co.uk/
-Public HTML profile: https://www.prwl.co.uk/profile.html
+Profile content is available through the interactive login only. Former /profile.html links redirect to the welcome screen.
 Sitemap: https://www.prwl.co.uk/sitemap.xml
 
-Implemented: descriptive name-led titles and descriptions, self-referencing canonical URLs, home duplicate redirect, Person/WebSite/WebPage and ProfilePage structured data, verified social identity links, social preview tags, public HTML profile available without login or JavaScript, and crawl discovery files. No hidden keyword text or bot-specific login bypass is used.
+Implemented: descriptive name-led titles and descriptions, self-referencing canonical URLs, home duplicate redirect, Person/WebSite/WebPage and ProfilePage structured data, verified social identity links, social preview tags, crawl discovery files. No hidden keyword text or bot-specific login bypass is used.
 
-Next account step: add the production URL-prefix property in Google Search Console, verify ownership with its supplied HTML verification file or meta tag, submit sitemap.xml and request indexing of / and /profile.html. No Search Console verification value has been provided; none has been invented, and no submission is claimed.
+Next account step: add the production URL-prefix property in Google Search Console, verify ownership with its supplied HTML verification file or meta tag, submit sitemap.xml and request indexing of /. No Search Console verification value has been provided; none has been invented, and no submission is claimed.
 
 Add the production URL to LinkedIn’s website/featured links, GitHub profile and your social bios. These profile changes require the owner to update them. A personal domain can later become the canonical origin with redirects and an updated sitemap; keep the current origin stable until then.
 

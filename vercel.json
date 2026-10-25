@@ -18,6 +18,16 @@
   ],
   "redirects": [
     {
+      "source": "/profile.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/profile",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
