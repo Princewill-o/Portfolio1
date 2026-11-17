@@ -103,6 +103,6 @@ Game Studio has a compact scrollable game row and touch-sized actions. Locally i
 
 
 ## QuickInterview
-QuickInterview opens as a standalone application from the desktop icon or mobile home screen. Its black icon uses original low-poly SVG artwork. The page describes Princewill’s AI-assisted job application service and lists one-off GBP packages: 100 applications for £15, 250 for £30, 500 for £55 and 750 for £75. Every package opens https://calendly.com/lumen_ai/lumen-project-booking to arrange a call. Booking does not take payment or start applications.
+QuickInterview opens as a standalone application from the desktop icon or mobile home screen. Its black icon uses original monochrome low-poly SVG artwork. The interface uses a light document-style layout with in-page navigation, a package gallery and expandable booking questions. Original paper-plane and CV line artwork is included as SVG. The page describes Princewill’s AI-assisted job application service and lists one-off GBP packages: 100 applications for £15, 250 for £30, 500 for £55 and 750 for £75. Every package opens https://calendly.com/lumen_ai/lumen-project-booking to arrange a call. Booking does not take payment or start applications.
 
 The supplied Calendly URL is also configured in the portfolio’s existing booking view. Run `node --test tests/quickinterview.test.mjs` for pricing, booking-link and launch-route checks.
