@@ -1,5 +1,5 @@
 // Update these verified destinations when Princewill supplies more links.
-const profile = { name: 'Princewill Okube', linkedin: 'https://www.linkedin.com/in/princewillokube/', calendly: '' };
+const profile = { name: 'Princewill Okube', linkedin: 'https://www.linkedin.com/in/princewillokube/', calendly: 'https://calendly.com/lumen_ai/lumen-project-booking' };
 const socials = [
  {name:'Instagram',handle:'@princewilllo',url:'https://www.instagram.com/princewilllo/',icon:'instagram',detail:'The person behind the projects.',colour:'rose'},
  {name:'YouTube',handle:'@princewillcodes',url:'https://www.youtube.com/@princewillcodes',icon:'youtube',detail:'Ideas, experiments and the story of the build.',colour:'red'},
@@ -85,6 +85,7 @@ function animate(element,frames,options){if(reducedMotion.matches||document.body
 function bounceIcon(source){if(!source)return;const icon=source.closest('.dock-icon')||source.querySelector('.folder-wrap,.paper-icon');if(icon)animate(icon,[{transform:'translateY(0) scale(1)'},{transform:'translateY(-18px) scale(.94,1.07)',offset:.28},{transform:'translateY(0) scale(1.09,.94)',offset:.52},{transform:'translateY(-7px) scale(.98,1.02)',offset:.72},{transform:'translateY(0) scale(1)'}],{duration:620,easing:'cubic-bezier(.2,.75,.25,1)'})}
 function setRunning(key){document.querySelectorAll('.dock-icon[data-open]').forEach(b=>{b.classList.toggle('is-running',b.dataset.open===key);b.classList.remove('is-minimised')})}
 function openView(key,topic,source=document.activeElement){
+ if(key==='quickinterview'){location.href='quickinterview.html';return;}
  if(key==='messages'&&window.openMessages){window.openMessages();return;}
  if(key==='safari'&&window.openSafari){window.openSafari();return;}
  if(key==='games'&&window.openGameAdventure){window.openGameAdventure(source);return;}

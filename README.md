@@ -100,3 +100,9 @@ Phones up to 700 CSS pixels, and touch devices up to 1100 CSS pixels, use an iPh
 The supplied 100+ Apple iOS 27 Screens (Community) archive was inspected as a visual reference; it contains exported images, not runnable app source. The UI is implemented in mobile-shell.js/css using existing portfolio assets. No exported phone frame screenshots are used as fake functional screens.
 
 Game Studio has a compact scrollable game row and touch-sized actions. Locally implemented games use safe-area layouts, portrait/landscape menu rules, on-screen controls and interrupted-touch cleanup. Minecraft retains its upstream mobile UI and previously implemented viewport-scaling system. The externally hosted SM64 port still needs a keyboard and is labelled accordingly; the local Mario 65 has touch controls. Real iPhone/Android device visual playtests remain pending; DOM/scene/input checks are not hardware compatibility or FPS certification.
+
+
+## QuickInterview
+QuickInterview opens as a standalone application from the desktop icon or mobile home screen. Its black icon uses original low-poly SVG artwork. The page describes Princewill’s AI-assisted job application service and lists one-off GBP packages: 100 applications for £15, 250 for £30, 500 for £55 and 750 for £75. Every package opens https://calendly.com/lumen_ai/lumen-project-booking to arrange a call. Booking does not take payment or start applications.
+
+The supplied Calendly URL is also configured in the portfolio’s existing booking view. Run `node --test tests/quickinterview.test.mjs` for pricing, booking-link and launch-route checks.
